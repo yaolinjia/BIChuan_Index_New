@@ -1,3 +1,478 @@
+.y {
+  width: 1200px;
+  margin: 0 auto; }
 
+a {
+  text-decoration: none; }
+
+.nav_box {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  right: 0; }
+  .nav_box .navs {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .nav_box .navs .logo img {
+      width: 322px; }
+    .nav_box .navs > ul {
+      display: flex;
+      align-items: center; }
+      .nav_box .navs > ul li {
+        padding: 0 25px; }
+        .nav_box .navs > ul li a {
+          font-size: 14px;
+          color: #333333; }
+        .nav_box .navs > ul li .nav_act {
+          color: #4285f4; }
+        .nav_box .navs > ul li .btn {
+          border-radius: 18px;
+          font-size: 14px;
+          line-height: 34px;
+          text-align: center;
+          font-weight: 300;
+          width: 92px;
+          height: 36px;
+          border: 1px solid #4285f4;
+          cursor: pointer;
+          color: #4285f4; }
+
+.banner-box {
+  width: 100%;
+  background: url(../img/banner-bg2.png) 0 0 no-repeat;
+  background-size: cover;
+  height: 520px;
+  box-shadow: 0 31px 30px 0 rgba(217, 223, 236, 0.2);
+  padding-top: 70px;
+  box-sizing: border-box; }
+  .banner-box .home-slide-one {
+    width: 100%;
+    height: 450px;
+    background: url(../img/banner-bg2.png) 0 -70px no-repeat;
+    background-size: cover;
+    background-color: #fff;
+    text-align: center; }
+    .banner-box .home-slide-one .banner {
+      display: flex;
+      width: 1200px;
+      height: 450px;
+      margin: 0 auto; }
+      .banner-box .home-slide-one .banner .banner-left {
+        padding-left: 70px;
+        padding-top: 100px; }
+        .banner-box .home-slide-one .banner .banner-left .banner-blue {
+          color: #4285f4;
+          font-size: 24px;
+          font-weight: 400;
+          text-align: left;
+          margin-bottom: 25px; }
+        .banner-box .home-slide-one .banner .banner-left .banner-plat {
+          font-size: 34px;
+          color: #333;
+          line-height: 36px;
+          text-align: left;
+          line-height: 52px; }
+        .banner-box .home-slide-one .banner .banner-left .banner-plat {
+          font-size: 34px;
+          color: #333;
+          line-height: 36px;
+          text-align: left;
+          line-height: 52px; }
+        .banner-box .home-slide-one .banner .banner-left > div {
+          position: relative; }
+          .banner-box .home-slide-one .banner .banner-left > div .banner-use {
+            width: 148px;
+            height: 48px;
+            margin-top: 30px;
+            line-height: 48px;
+            text-align: center;
+            color: #fff;
+            background-image: linear-gradient(66deg, #5a87ff, #89a6ff);
+            border-radius: 24px; }
+      .banner-box .home-slide-one .banner .banner-right {
+        width: 600px;
+        margin-left: 80px; }
+        .banner-box .home-slide-one .banner .banner-right img {
+          width: 100%; }
+
+.light-list {
+  width: 1130px;
+  background: #fff;
+  -webkit-box-shadow: 0 2px 10px 0 rgba(217, 223, 236, 0.5);
+  box-shadow: 0 2px 10px 0 rgba(217, 223, 236, 0.5);
+  border-radius: 10px;
+  padding: 30px 92px 33px;
+  margin: 50px auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .light-list .light-item {
+    width: auto; }
+    .light-list .light-item .light-icon img {
+      width: 45px;
+      height: 45px; }
+    .light-list .light-item .light-title {
+      font-size: 18px;
+      color: #333;
+      line-height: 24px;
+      margin-top: 20px;
+      padding-bottom: 4px; }
+    .light-list .light-item .light-content {
+      font-size: 14px;
+      color: #999;
+      line-height: 16px;
+      padding-top: 6px; }
+    .light-list .light-item .light-content {
+      font-size: 14px;
+      color: #999;
+      line-height: 16px;
+      padding-top: 6px; }
+
+.team {
+  margin-top: 120px; }
+  .team .reason-title .reason-que {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    line-height: 24px;
+    margin-bottom: 14px; }
+  .team .reason-title .reason-desc {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    line-height: 16px; }
+  .team .team-list {
+    min-width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: top;
+    -ms-flex-align: top;
+    align-items: top;
+    margin-top: 91px; }
+    .team .team-list .team-imgwrap {
+      background: #fafbfc;
+      width: calc(50% + 110px);
+      min-width: 710px;
+      text-align: right; }
+      .team .team-list .team-imgwrap .team-img {
+        width: 710px; }
+    .team .team-list ul {
+      display: inline-block;
+      padding-top: 30px;
+      padding-bottom: 10px;
+      width: 450px;
+      font-weight: 400;
+      margin-left: 40px; }
+      .team .team-list ul li {
+        margin-bottom: 40px;
+        padding-left: 36px;
+        text-align: left; }
+        .team .team-list ul li img {
+          width: 24px;
+          height: 24px;
+          margin-right: 16px;
+          vertical-align: middle; }
+        .team .team-list ul li > span {
+          font-size: 20px; }
+        .team .team-list ul li .team-detail-item {
+          padding-left: 45px;
+          margin-top: 10px; }
+          .team .team-list ul li .team-detail-item span {
+            margin-right: 20px;
+            font-size: 16px; }
+        .team .team-list ul li .fall-triangle {
+          width: 150px !important;
+          height: auto !important;
+          position: absolute;
+          right: -20px;
+          top: 0; }
+        .team .team-list ul li .team-detail-item,
+        .team .team-list ul li .fall-triangle {
+          display: none; }
+      .team .team-list ul .active {
+        padding-top: 10px;
+        background: linear-gradient(-179deg, #e7f1ff, rgba(222, 233, 255, 0) 81%);
+        background: -ms-linear-gradient(-179deg, #e7f1ff 0, rgba(222, 233, 255, 0) 81%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e7f1ff", endColorstr="#ffffff", GradientType=0);
+        background-size: 150px;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 70px;
+        overflow: hidden; }
+        .team .team-list ul .active > span {
+          color: #4285f4;
+          font-size: 20px; }
+        .team .team-list ul .active .team-detail-item,
+        .team .team-list ul .active .fall-triangle {
+          display: block; }
+      .team .team-list ul .active:before {
+        content: "\66F4\591A";
+        display: block;
+        position: absolute;
+        right: 10px;
+        color: #4285f4;
+        font-size: 14px;
+        background: url(../img/index_tab_act.png) 100% no-repeat;
+        background-size: 15px;
+        width: 50px;
+        z-index: 8; }
+
+.integrate {
+  margin-top: 120px;
+  margin-bottom: 120px;
+  padding-top: 95px;
+  background: #fafbfc; }
+  .integrate .reason-title {
+    padding-bottom: 120px; }
+    .integrate .reason-title .reason-que {
+      font-size: 24px;
+      color: #333;
+      text-align: center;
+      line-height: 24px;
+      margin-bottom: 14px; }
+    .integrate .reason-title .reason-desc {
+      font-size: 16px;
+      color: #666;
+      text-align: center;
+      line-height: 16px; }
+  .integrate .integrate-banwrap {
+    position: relative; }
+    .integrate .integrate-banwrap .integrate-ban {
+      width: 1040px;
+      margin: 0 auto; }
+      .integrate .integrate-banwrap .integrate-ban > div {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .integrate .integrate-banwrap .integrate-ban > div .integrate-ban-img {
+          width: 520px;
+          height: 400px; }
+        .integrate .integrate-banwrap .integrate-ban > div .integrate-ban-content {
+          padding-left: 123px; }
+          .integrate .integrate-banwrap .integrate-ban > div .integrate-ban-content h3 {
+            position: relative;
+            margin-bottom: 14px;
+            font-size: 28px;
+            font-weight: 400;
+            z-index: 10; }
+            .integrate .integrate-banwrap .integrate-ban > div .integrate-ban-content h3 span {
+              position: absolute;
+              font-size: 60px;
+              text-align: center;
+              line-height: 50px;
+              left: 0;
+              top: -30px;
+              color: #ebebeb;
+              z-index: 9; }
+            .integrate .integrate-banwrap .integrate-ban > div .integrate-ban-content h3 p {
+              position: relative;
+              z-index: 10;
+              color: #333; }
+          .integrate .integrate-banwrap .integrate-ban > div .integrate-ban-content .integrate-content {
+            line-height: 22px;
+            font-size: 16px;
+            color: #666; }
+          .integrate .integrate-banwrap .integrate-ban > div .integrate-ban-content .content-compan {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #999;
+            display: inline-block;
+            margin-right: 60px; }
+            .integrate .integrate-banwrap .integrate-ban > div .integrate-ban-content .content-compan img {
+              width: 20px;
+              height: 20px;
+              vertical-align: text-bottom; }
+    .integrate .integrate-banwrap .common-box {
+      width: 100%;
+      text-align: center; }
+      .integrate .integrate-banwrap .common-box .design {
+        width: 1040px;
+        margin: 0 auto;
+        color: #fff;
+        position: relative; }
+        .integrate .integrate-banwrap .common-box .design .deisn-slot {
+          width: 100%; }
+          .integrate .integrate-banwrap .common-box .design .deisn-slot > div {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between; }
+        .integrate .integrate-banwrap .common-box .design .design-slot-top {
+          margin: 60px 0; }
+          .integrate .integrate-banwrap .common-box .design .design-slot-top .content-compan {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #999;
+            display: inline-block;
+            margin-right: 60px; }
+            .integrate .integrate-banwrap .common-box .design .design-slot-top .content-compan img {
+              width: 20px;
+              height: 20px;
+              vertical-align: text-bottom; }
+          .integrate .integrate-banwrap .common-box .design .design-slot-top .content-left {
+            padding-top: 94px;
+            padding-left: 80px;
+            text-align: left;
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1; }
+            .integrate .integrate-banwrap .common-box .design .design-slot-top .content-left h3 {
+              position: relative;
+              margin-bottom: 14px;
+              font-size: 28px;
+              font-weight: 400;
+              z-index: 90; }
+              .integrate .integrate-banwrap .common-box .design .design-slot-top .content-left h3 span {
+                position: absolute;
+                font-size: 60px;
+                text-align: center;
+                line-height: 50px;
+                left: 0;
+                top: -30px;
+                color: #ebebeb;
+                z-index: 9; }
+              .integrate .integrate-banwrap .common-box .design .design-slot-top .content-left h3 p {
+                position: relative;
+                z-index: 90;
+                color: #333;
+                font-size: 28px !important; }
+            .integrate .integrate-banwrap .common-box .design .design-slot-top .content-left p {
+              font-size: 16px;
+              color: #666;
+              line-height: 16px;
+              line-height: 22px; }
+          .integrate .integrate-banwrap .common-box .design .design-slot-top .content-right {
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            text-align: left; }
+            .integrate .integrate-banwrap .common-box .design .design-slot-top .content-right > img {
+              width: 520px; }
+        .integrate .integrate-banwrap .common-box .design .design-slot-bottom {
+          margin: 60px 0; }
+          .integrate .integrate-banwrap .common-box .design .design-slot-bottom .content-compan {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #999;
+            margin-right: 60px;
+            display: inline-block; }
+            .integrate .integrate-banwrap .common-box .design .design-slot-bottom .content-compan img {
+              width: 20px;
+              height: 20px;
+              vertical-align: text-bottom; }
+          .integrate .integrate-banwrap .common-box .design .design-slot-bottom .content-left {
+            text-align: left;
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1; }
+            .integrate .integrate-banwrap .common-box .design .design-slot-bottom .content-left > img {
+              width: 520px; }
+          .integrate .integrate-banwrap .common-box .design .design-slot-bottom .content-right {
+            -webkit-box-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            text-align: left;
+            padding-left: 123px;
+            padding-top: 94px; }
+            .integrate .integrate-banwrap .common-box .design .design-slot-bottom .content-right h3 {
+              position: relative;
+              margin-bottom: 14px;
+              font-size: 28px;
+              font-weight: 400;
+              z-index: 90; }
+              .integrate .integrate-banwrap .common-box .design .design-slot-bottom .content-right h3 span {
+                position: absolute;
+                font-size: 60px;
+                text-align: center;
+                line-height: 50px;
+                left: 0;
+                top: -30px;
+                color: #ebebeb;
+                z-index: 9; }
+              .integrate .integrate-banwrap .common-box .design .design-slot-bottom .content-right h3 p {
+                position: relative;
+                z-index: 90;
+                color: #333;
+                font-size: 28px !important; }
+            .integrate .integrate-banwrap .common-box .design .design-slot-bottom .content-right p {
+              font-size: 16px;
+              color: #666;
+              line-height: 16px;
+              line-height: 22px; }
+  .integrate .integrate-tips {
+    font-size: 16px;
+    color: #4285f4;
+    text-align: center;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 103px;
+    padding-bottom: 40px;
+    -webkit-box-shadow: 0 -10px 10px 22px rgba(250, 251, 254, 0.4);
+    box-shadow: 0 -10px 10px 22px rgba(250, 251, 254, 0.4);
+    background: #fafbfe; }
+    .integrate .integrate-tips img {
+      width: 7px;
+      margin-left: 11px; }
+
+.common-box {
+  width: 100%;
+  text-align: center; }
+  .common-box > div {
+    width: 1200px;
+    margin: 0 auto; }
+  .common-box .reason {
+    background-size: 287px 175px; }
+    .common-box .reason .reason-list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding-top: 50px;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      .common-box .reason .reason-list .reason-item {
+        width: 288px;
+        text-align: center;
+        display: inline-block;
+        padding: 50px 32px;
+        width: 30%; }
+        .common-box .reason .reason-list .reason-item .reason-item-icon {
+          width: 64px;
+          height: 64px; }
+        .common-box .reason .reason-list .reason-item .reason-item-title {
+          font-size: 20px;
+          color: #333;
+          text-align: center;
+          line-height: 24px;
+          margin-bottom: 20px; }
+        .common-box .reason .reason-list .reason-item .reason-item-content {
+          font-size: 16px;
+          color: #999;
+          line-height: 22px; }
+    .common-box .reason .reason-title .reason-que {
+      font-size: 24px;
+      color: #333;
+      text-align: center;
+      line-height: 24px;
+      margin-bottom: 14px; }
+    .common-box .reason .reason-title .reason-desc {
+      font-size: 16px;
+      color: #666;
+      text-align: center;
+      line-height: 16px; }
 
 /*# sourceMappingURL=index.css.map */
