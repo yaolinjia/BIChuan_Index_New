@@ -1,0 +1,111 @@
+@charset "utf-8";
+@import "./commen.scss";
+
+.partner[data-v-328068de] {
+    padding-top: 70px;
+    position: relative;
+    font-family: MicrosoftYaHeiUILight;
+
+    .bgBanner[data-v-328068de] {
+        width: 100%;
+        height: 800px;
+
+        img[data-v-328068de] {
+            width: 100%;
+            height: 100%;
+        }
+
+        .head-content[data-v-328068de] {
+            position: absolute;
+            top: 222px;
+            left: 0;
+            width: 100%;
+            font-size: 26px;
+            color: #fff;
+            text-align: center;
+
+            .title[data-v-328068de] {
+                font-size: 58px;
+                margin-bottom: 40px;
+            }
+
+            .apply[data-v-328068de] {
+                display: inline-block;
+                background: #4285f4;
+                color: #fff;
+                border-radius: 31px;
+                height: 62px;
+                line-height: 62px;
+                padding: 0 42px;
+                margin-top: 60px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .support[data-v-328068de] {
+        padding-top: 100px;
+
+        h3[data-v-328068de] {
+            font-size: 24px;
+            color: #333;
+            font-weight: 400;
+            width: 100%;
+            text-align: center;
+        }
+
+        &>p[data-v-328068de] {
+            width: 1000px;
+            line-height: 2;
+            margin: 30px auto 100px;
+        }
+
+        .supportList[data-v-328068de] {
+            width: 1040px;
+            margin: 0 auto;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+
+            p[data-v-328068de] {
+                line-height: 1.5;
+                text-align: center;
+            }
+
+            .supportItem[data-v-328068de] {
+                width: 288px;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                margin-bottom: 94px;
+
+                .itemHead[data-v-328068de] {
+                    width: 64px;
+                    height: 64px;
+
+                    img[data-v-328068de] {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .itemTitle[data-v-328068de] {
+                    font-size: 18px;
+                    color: #333;
+                    text-align: center;
+                    margin: 15px 0;
+                }
+            }
+        }
+    }
+}

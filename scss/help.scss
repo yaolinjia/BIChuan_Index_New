@@ -1,0 +1,241 @@
+@charset "utf-8";
+@import "./commen.scss";
+
+.help[data-v-5eff1eca] {
+    min-width: 1200px;
+
+    .title[data-v-5eff1eca] {
+        padding-top: 60px;
+        padding-bottom: 30px;
+        font-size: 28px;
+        color: #333;
+    }
+
+    .tips[data-v-5eff1eca] {
+        font-size: 16px;
+        color: #999;
+        padding-bottom: 40px;
+    }
+
+    .know-more[data-v-5eff1eca] {
+        width: 1200px;
+        text-align: center;
+        margin: 60px auto 0;
+        padding-bottom: 100px;
+
+        span[data-v-5eff1eca] {
+            display: inline-block;
+            background: #fff;
+            border: 1px solid #4285f4;
+            border-radius: 21px;
+            width: 126px;
+            height: 42px;
+            line-height: 42px;
+            font-size: 16px;
+            color: #4285f4;
+            text-shadow: 0 2px 17px hsla(0, 0%, 100%, .13);
+        }
+    }
+
+    .help-banner[data-v-5eff1eca] {
+        margin-top: 70px;
+        height: 380px;
+        background: url(../img/help_bg.d9bc231.png) 0 0 no-repeat;
+        background-size: 100% 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+
+        &>div[data-v-5eff1eca] {
+            width: 1200px;
+            margin: 0 auto;
+
+            p[data-v-5eff1eca] {
+                color: #fff;
+            }
+
+            p[data-v-5eff1eca]:first-child {
+                font-size: 42px;
+                text-align: center;
+                line-height: 42px;
+                margin-bottom: 40px;
+            }
+
+            p[data-v-5eff1eca]:last-child {
+                font-size: 20px;
+                text-align: center;
+                line-height: 20px;
+            }
+        }
+    }
+
+    .newwrap[data-v-5eff1eca] {
+        background-image: -webkit-gradient(linear, left bottom, left top, color-stop(32%, #fff), to(#fafbfc));
+        background-image: linear-gradient(0deg, #fff 32%, #fafbfc);
+
+        &>p[data-v-5eff1eca] {
+            font-size: 28px;
+            color: #333;
+            text-align: center;
+            line-height: 28px;
+            padding-top: 120px;
+            padding-bottom: 30px;
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .new[data-v-5eff1eca] {
+            width: 1200px;
+            height: 400px;
+            margin: 0 auto;
+            position: relative;
+
+            .new-handimg[data-v-5eff1eca] {
+                display: inline-block;
+                height: 100%;
+                width: 400px;
+
+                img[data-v-5eff1eca] {
+                    width: 400px;
+                }
+            }
+
+            .new-help[data-v-5eff1eca] {
+                padding-right: 95px;
+                display: inline-block;
+                position: absolute;
+                left: 400px;
+                top: -5px;
+
+                ul[data-v-5eff1eca],
+                .help .newwrap .new .new-help ul li[data-v-5eff1eca] {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-pack: justify;
+                    -ms-flex-pack: justify;
+                    justify-content: space-between;
+                    margin-top: 50px;
+                }
+
+                li[data-v-5eff1eca]:nth-child(odd) {
+                    margin-right: 83px;
+                }
+
+                li[data-v-5eff1eca] {
+                    font-size: 18px;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    color: #333;
+                    width: 320px;
+                    cursor: pointer;
+                    margin-right: 83px;
+
+                    img[data-v-5eff1eca] {
+                        width: 45px;
+                        height: 45px;
+                        vertical-align: middle;
+                    }
+
+                    span[data-v-5eff1eca] {
+                        margin-left: 10px;
+                        color: #000;
+                    }
+
+                    .new-help-more[data-v-5eff1eca] {
+                        width: 14px;
+                        height: 14px;
+                        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAaCAYAAADSbo4CAAAAAXNSR…XLsus8z98lTxDIGiGoRvNIEAQfRVGMGXdBnniTACdXfgFljeuP9Vgm8wAAAABJRU5ErkJggg==) 100% 0 no-repeat;
+                        background-size: 16px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .usewrap[data-v-5eff1eca] {
+        background-image: -webkit-gradient(linear, left bottom, left top, color-stop(32%, #fff), to(#fafbfc));
+        background-image: linear-gradient(0deg, #fff 32%, #fafbfc);
+
+        .use[data-v-5eff1eca] {
+            width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .use-list[data-v-5eff1eca] {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            padding: 0 60px;
+            width: 1200px;
+            margin: 0 auto;
+
+            img[data-v-5eff1eca] {
+                width: 70px;
+                height: 70px;
+                vertical-align: bottom;
+            }
+
+            p[data-v-5eff1eca] {
+                text-align: center;
+                margin-top: 20px;
+                margin-bottom: 40px;
+                font-size: 14px;
+                color: #333;
+            }
+
+            li[data-v-5eff1eca] {
+                width: 180px;
+                text-align: center;
+            }
+        }
+    }
+
+    .question[data-v-5eff1eca] {
+        width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+
+        ul[data-v-5eff1eca] {
+            padding-left: 170px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            padding-bottom: 90px;
+
+            span[data-v-5eff1eca] {
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                background: #e3e3e3;
+                border-radius: 2px;
+                margin-right: 17px;
+            }
+
+            li[data-v-5eff1eca]:nth-child(odd) {
+                margin-right: 75px;
+            }
+
+            li[data-v-5eff1eca] {
+                width: 422px;
+                text-align: left;
+                font-size: 14px;
+                color: #333;
+                line-height: 14px;
+                margin-bottom: 30px;
+                cursor: pointer;
+            }
+        }
+    }
+}
