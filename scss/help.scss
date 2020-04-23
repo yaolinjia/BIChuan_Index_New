@@ -134,8 +134,12 @@
                     width: 320px;
                     cursor: pointer;
                     margin-right: 83px;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
                     display: flex;
-                    justify-content: space-between;
+                    -webkit-box-pack: justify;
+                        -ms-flex-pack: justify;
+                            justify-content: space-between;
                     img[data-v-5eff1eca] {
                         width: 45px;
                         height: 45px;
@@ -154,6 +158,7 @@
                         background: url(../img/help_more.png) 100% 0 no-repeat;
                         background-size: 16px;
                         margin-right: 10px;
+                        -webkit-transition: all .3s ease;
                         transition: all .3s ease;
 
                     }
@@ -162,8 +167,8 @@
                 li[data-v-5eff1eca]:hover .new-help-more[data-v-5eff1eca]{
                         background: url(../img/help_more2.png) 100% 0 no-repeat;
                         background-size: 16px;
-
-                        transform: translateX(10px);
+                        -webkit-transform: translateX(10px);
+                                transform: translateX(10px);
                 }
             }
 

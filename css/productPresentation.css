@@ -275,6 +275,7 @@ a {
           text-align: center;
           visibility: hidden;
           opacity: 0;
+          -webkit-transition: opacity .5s;
           transition: opacity .5s; }
           .product .product-banner .product-nav li > div[data-v-0c55e207] p[data-v-0c55e207] {
             line-height: 32px; }
