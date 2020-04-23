@@ -102,7 +102,7 @@
                 border-radius: 4px;
                 text-align: center;
                 cursor: default;
-
+                transition: all .5s ease;
                 .version-title[data-v-20e08a80] {
                     font-size: 24px;
                     color: #fff;
@@ -138,7 +138,7 @@
                 }
 
             }
-
+      
             .point {
                 cursor: pointer;
                 position: relative;
@@ -156,6 +156,8 @@
                 color: #4285f4;
                 text-align: center;
                 text-shadow: 0 2px 17px hsla(0, 0%, 100%, .13);
+                transition: all .5s ease;
+
             }
 
             .version-items[data-v-20e08a80] {
@@ -177,6 +179,15 @@
                     vertical-align: middle;
                     margin-right: 10px;
                 }
+            }
+            .version-item:hover{
+                transform: translateY(-20px);
+
+            }
+            .version-item:hover .version-btn{
+                background-color: #4285f4;
+                color: #fff;
+
             }
         }
 
@@ -250,7 +261,7 @@
             width: 12px;
             height: 12px;
         }
-
+ 
         .title-tips[data-v-20e08a80] {
             height: 40px;
             line-height: 40px;
@@ -391,5 +402,57 @@
             color: #999;
             margin-top: 30px;
         }
+    }
+}
+.close[data-v-20e08a80] {
+    text-align: right;
+    span[data-v-20e08a80] {
+        display: inline-block;
+        color: #4285f4;
+        border: .8px solid #4285f4;
+        border-radius: 21px;
+        width: 79px;
+        height: 32px;
+        font-size: 16px;
+        text-align: center;
+        line-height: 32px;
+        margin-top: 32px;
+        cursor: pointer;
+    }
+}
+.open[data-v-20e08a80] {
+    width: 100%;
+    height: 60px;
+    background: -webkit-gradient(linear,left top,left bottom,from(#fff),to(hsla(0,0%,100%,.8)));
+    background: linear-gradient(180deg,#fff,hsla(0,0%,100%,.8));
+    -webkit-box-shadow: 0 -4px 12px 0 hsla(0,0%,75.7%,.3);
+    box-shadow: 0 -4px 12px 0 hsla(0,0%,75.7%,.3);
+    font-size: 14px;
+    color: #4285f4;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+    // display: none;
+    .openPic[data-v-20e08a80] {
+        width: 99px;
+        height: 30px;
+        border-radius: 15px;
+        border: 1px solid #4285f4;
+        line-height: 30px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin: 30px auto 0;
+        &>div[data-v-20e08a80] {
+            margin-left: 10px;
+         
+        }   img[data-v-20e08a80] {
+                width: 30px;
+                height: 30px;
+            }
     }
 }

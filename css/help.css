@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .y {
   width: 1200px;
   margin: 0 auto; }
@@ -313,20 +312,28 @@ a {
           color: #333;
           width: 320px;
           cursor: pointer;
-          margin-right: 83px; }
+          margin-right: 83px;
+          display: flex;
+          justify-content: space-between; }
           .help[data-v-5eff1eca] .newwrap[data-v-5eff1eca] .new[data-v-5eff1eca] .new-help[data-v-5eff1eca] li[data-v-5eff1eca] img[data-v-5eff1eca] {
             width: 45px;
             height: 45px;
             vertical-align: middle; }
           .help[data-v-5eff1eca] .newwrap[data-v-5eff1eca] .new[data-v-5eff1eca] .new-help[data-v-5eff1eca] li[data-v-5eff1eca] span[data-v-5eff1eca] {
             margin-left: 10px;
-            color: #000; }
+            color: #000;
+            font-weight: 100; }
           .help[data-v-5eff1eca] .newwrap[data-v-5eff1eca] .new[data-v-5eff1eca] .new-help[data-v-5eff1eca] li[data-v-5eff1eca] .new-help-more[data-v-5eff1eca] {
             width: 14px;
             height: 14px;
-            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAaCAYAAADSbo4CAAAAAXNSR…XLsus8z98lTxDIGiGoRvNIEAQfRVGMGXdBnniTACdXfgFljeuP9Vgm8wAAAABJRU5ErkJggg==) 100% 0 no-repeat;
+            background: url(../img/help_more.png) 100% 0 no-repeat;
             background-size: 16px;
-            margin-right: 10px; }
+            margin-right: 10px;
+            transition: all .3s ease; }
+        .help[data-v-5eff1eca] .newwrap[data-v-5eff1eca] .new[data-v-5eff1eca] .new-help[data-v-5eff1eca] li[data-v-5eff1eca]:hover .new-help-more[data-v-5eff1eca] {
+          background: url(../img/help_more2.png) 100% 0 no-repeat;
+          background-size: 16px;
+          transform: translateX(10px); }
   .help[data-v-5eff1eca] .usewrap[data-v-5eff1eca] {
     background-image: -webkit-gradient(linear, left bottom, left top, color-stop(32%, #fff), to(#fafbfc));
     background-image: linear-gradient(0deg, #fff 32%, #fafbfc); }
@@ -355,7 +362,10 @@ a {
         color: #333; }
       .help[data-v-5eff1eca] .usewrap[data-v-5eff1eca] .use-list[data-v-5eff1eca] li[data-v-5eff1eca] {
         width: 180px;
-        text-align: center; }
+        text-align: center;
+        cursor: pointer; }
+      .help[data-v-5eff1eca] .usewrap[data-v-5eff1eca] .use-list[data-v-5eff1eca] li:hover p {
+        color: #4285f4; }
   .help[data-v-5eff1eca] .question[data-v-5eff1eca] {
     width: 1200px;
     margin: 0 auto;

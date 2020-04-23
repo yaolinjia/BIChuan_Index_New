@@ -8,7 +8,6 @@ $(function () {
         var contentH = $(document).height(); //内容高度
 
         if (scroH > 0) { //距离顶部大于100px时
-            console.log('99')
             $(".nav_box").css("backgroundColor", "#fff")
         } else {
             $(".nav_box").css("backgroundColor", "transparent")
@@ -31,4 +30,22 @@ $(function () {
         function () {
 
         })
+    var now_list = 0;
+    var max_num = ($(".cardList>.card").length - 2) * -460
+    $(".witness>.right").click(function () {
+        if (now_list >max_num) {
+            now_list -= 460;
+            var new_x = `translateX(${now_list}px)`;
+            $(".cardList").css("transform", new_x);
+        }
+
+    })
+    $(".witness>.left").click(function () {
+        if (now_list < 0) {
+            now_list += 460;
+            var new_x = `translateX(${now_list}px)`;
+            $(".cardList").css("transform", new_x);
+        }
+
+    })
 })

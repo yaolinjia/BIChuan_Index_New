@@ -134,7 +134,8 @@
                     width: 320px;
                     cursor: pointer;
                     margin-right: 83px;
-
+                    display: flex;
+                    justify-content: space-between;
                     img[data-v-5eff1eca] {
                         width: 45px;
                         height: 45px;
@@ -144,15 +145,25 @@
                     span[data-v-5eff1eca] {
                         margin-left: 10px;
                         color: #000;
+                        font-weight: 100;
                     }
 
                     .new-help-more[data-v-5eff1eca] {
                         width: 14px;
                         height: 14px;
-                        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAaCAYAAADSbo4CAAAAAXNSR…XLsus8z98lTxDIGiGoRvNIEAQfRVGMGXdBnniTACdXfgFljeuP9Vgm8wAAAABJRU5ErkJggg==) 100% 0 no-repeat;
+                        background: url(../img/help_more.png) 100% 0 no-repeat;
                         background-size: 16px;
                         margin-right: 10px;
+                        transition: all .3s ease;
+
                     }
+                    
+                }
+                li[data-v-5eff1eca]:hover .new-help-more[data-v-5eff1eca]{
+                        background: url(../img/help_more2.png) 100% 0 no-repeat;
+                        background-size: 16px;
+
+                        transform: translateX(10px);
                 }
             }
 
@@ -196,6 +207,10 @@
             li[data-v-5eff1eca] {
                 width: 180px;
                 text-align: center;
+                cursor: pointer;
+            }
+            li:hover p{
+                color: $my_blue;
             }
         }
     }
