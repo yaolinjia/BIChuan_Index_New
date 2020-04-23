@@ -8,6 +8,9 @@
     <title>笔船研学</title>
     <link href="https://cdn.bootcss.com/minireset.css/0.0.2/minireset.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
+    <script src="https://cdn.bootcss.com/jquery/3.5.0/jquery.min.js"></script>
+    <script src="./js/commen.js"></script>
+    <script src="./js/index.js"></script>
 </head>
 
 <body>
@@ -80,20 +83,15 @@
         </div>
         <div class="team-list">
             <div class="team-imgwrap">
-                <img name="fade" src="./img/side1.c8bf5c4.png" alt="" class="team-img animated fadeIn"
-                    style="display: none;">
-                <img name="fade" src="./img/side2.cfb806e.png" alt="" class="team-img animated fadeIn"
-                    style="display: none;">
-                <img name="fade" src="./img/side3.b102f6f.png" alt="" class="team-img animated fadeIn"
-                    style="display: none;">
-                <img name="fade" src="./img/side4.70e4344.png" alt="" class="team-img animated fadeIn"
-                    style="display: none;">
-                <img name="fade" src="./img/side5.85d91ef.png" alt="" class="team-img animated fadeIn"
-                    style="display: none;">
-                <img name="fade" src="./img/side6.6e6f59c.png" alt="" class="team-img animated fadeIn">
+                <img name="fade" src="./img/side1.c8bf5c4.png" alt="" class="team-img">
+                <img name="fade" src="./img/side2.cfb806e.png" alt="" class="team-img">
+                <img name="fade" src="./img/side3.b102f6f.png" alt="" class="team-img">
+                <img name="fade" src="./img/side4.70e4344.png" alt="" class="team-img">
+                <img name="fade" src="./img/side5.85d91ef.png" alt="" class="team-img">
+                <img name="fade" src="./img/side6.6e6f59c.png" alt="" class="team-img">
             </div>
-            <ul class="team-detail point">
-                <li class=""><img
+            <ul class="team-detail point" id="team_tab">
+                <li class="active"><img
                         src="data:image/png;base64,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"
                         alt=""> <span>客户在线</span>
                     <p class="team-detail-item"><span>固资管理</span><span>办公资源管理</span><span>办公用品管理</span></p>
@@ -124,7 +122,7 @@
                     <p class="team-detail-item"><span>固资管理</span><span>办公资源管理</span><span>办公用品管理</span></p>
                     <img src="./img/1.e481286.png" alt="" class="fall-triangle">
                 </li>
-                <li class="active">
+                <li class="">
                     <img src="data:image/png;base64,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"
                         alt=""> <span>行政管理</span>
                     <p class="team-detail-item"><span>固资管理</span><span>办公资源管理</span><span>办公用品管理</span></p>
@@ -331,7 +329,51 @@
         <img src="./img/01.9bd374a.png" alt="">
     </div>
 
+
+
+
+
+
+    <div class="floating">
+        <div class="floating-item">
+            <svg data-v-3c4aa6b6="" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 1024 1024"
+                aria-labelledby="在线咨询" role="presentation" icon-name="chat">
+                <title data-v-3c4aa6b6="" id="在线咨询" lang="en">在线咨询</title>
+                <g data-v-3c4aa6b6="" fill="#333">
+                    <path
+                        d="M512 42.666667c259.2 0 469.333333 210.133333 469.333333 469.333333s-210.133333 469.333333-469.333333 469.333333a467.157333 467.157333 0 0 1-236.096-63.616L114.709333 961.706667a42.666667 42.666667 0 0 1-52.394666-52.394667l43.946666-161.194667A467.157333 467.157333 0 0 1 42.666667 512C42.666667 252.8 252.8 42.666667 512 42.666667z m0 85.333333C299.925333 128 128 299.925333 128 512c0 68.906667 18.090667 134.976 51.989333 193.109333l18.026667 30.912-33.728 123.690667 123.690667-33.728 30.933333 18.026667A381.802667 381.802667 0 0 0 512 896c212.074667 0 384-171.925333 384-384S724.074667 128 512 128z m128 256a64 64 0 1 1 0 128 64 64 0 0 1 0-128z m-256 0a64 64 0 1 1 0 128 64 64 0 0 1 0-128z"
+                        p-id="5863" data-v-3c4aa6b6=""></path>
+                </g>
+            </svg>
+        </div>
+        <div class="popover">
+            <div class="floating-item popover-item"><svg data-v-3c4aa6b6="" xmlns="http://www.w3.org/2000/svg"
+                    width="36" height="36" viewBox="0 0 1024 1024" aria-labelledby="电话咨询" role="presentation"
+                    icon-name="consult">
+                    <title data-v-3c4aa6b6="" id="电话咨询" lang="en">电话咨询</title>
+                    <g data-v-3c4aa6b6="" fill="#333">
+                        <path
+                            d="M877.958095 788.382476c-12.434286 105.520762-100.937143 185.051429-206.165333 185.344h-50.151619a103.472762 103.472762 0 0 1-82.261333 40.521143H483.230476c-57.465905 0-104.057905-47.055238-104.057905-105.081905s46.592-105.081905 104.057905-105.081904h56.173714a103.814095 103.814095 0 0 1 95.817143 64.828952h34.596572c51.565714 0.048762 95.329524-38.13181 102.814476-89.648762V344.259048A237.446095 237.446095 0 0 0 655.238095 138.971429a232.764952 232.764952 0 0 0-234.715428 0 237.446095 237.446095 0 0 0-117.369905 205.263238v444.635428H196.33981a185.685333 185.685333 0 0 1-132.120381-55.344762A189.342476 189.342476 0 0 1 9.752381 599.966476v-9.118476c0.26819-103.838476 83.72419-187.879619 186.587429-187.879619v-56.198095C203.337143 161.328762 354.328381 14.628571 538.136381 14.628571c183.832381 0 334.750476 146.70019 341.820952 332.166096v56.198095c101.376 1.657905 182.784 84.992 183.052191 187.392v10.118095c0 102.595048-81.481143 186.221714-183.076572 187.879619h-1.999238z m0-288.158476v190.927238a79.872 79.872 0 0 0 56.441905-24.454095 81.432381 81.432381 0 0 0 22.77181-57.58781v-29.379047c-0.75581-42.983619-34.669714-77.897143-77.238858-79.481905h-1.999238z m-683.641905 0c-44.592762 0-80.749714 36.522667-80.749714 81.529905v27.355428c0 45.031619 36.156952 81.529905 80.749714 81.529905v-190.415238z"
+                            p-id="5623" data-v-3c4aa6b6=""></path>
+                    </g>
+                </svg></div>
+            <div class="pop">
+                4006-222-312
+                <div class="pop-arrow"></div>
+            </div>
+        </div>
+        <div class="floating-item"><svg data-v-3c4aa6b6="" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                viewBox="0 0 1024 1024" aria-labelledby="免费体验" role="presentation" icon-name="gift">
+                <title data-v-3c4aa6b6="" id="免费体验" lang="en">免费体验</title>
+                <g data-v-3c4aa6b6="" fill="#333">
+                    <path
+                        d="M441.177302 55.153116l96.684651 96.684651 96.73228-96.684651c63.273674-63.273674 162.887442-66.202791 222.255627-6.834604 48.842419 48.818605 55.510326 124.666047 21.313489 185.272558l12.002232-0.023814c88.421209 0 160.506047 70.251163 163.816186 157.743628l0.11907 6.286883a163.982884 163.982884 0 0 1-140.597581 162.387349v306.318884a140.573767 140.573767 0 0 1-140.597582 140.549953h-468.658604a140.549953 140.549953 0 0 1-140.597582-140.549953V559.985116a164.173395 164.173395 0 0 1-140.597581-162.387349 163.935256 163.935256 0 0 1 163.935256-164.030511H197.655814c-34.196837-60.606512-27.457488-136.525395 21.289674-185.272558 59.487256-59.463442 158.981953-56.415256 222.255628 6.858418z m144.241117 506.451349l0.023814 234.353116a46.86586 46.86586 0 1 1-93.731721 0l-0.023814-234.353116h-234.305489v304.699535c0 25.885767 20.956279 46.818233 46.865861 46.818233h468.658604c25.885767 0 46.86586-20.956279 46.865861-46.818233l-0.023814-304.699535h-234.329302z m304.747162-234.305488H186.987163a70.203535 70.203535 0 0 0-70.203535 70.29879c0 35.006512 25.957209 64.702512 60.130232 69.584373l10.144745 1.428837 0.023814-0.714419 304.604279-0.023814 0.023814-46.842046a46.86586 46.86586 0 1 1 93.731721 0l-0.023814 46.842046 304.651907 0.023814-0.023814 0.714419 10.24-1.428837c34.220651-4.88186 60.082605-34.458791 60.106418-67.82214l-0.071442-4.524651a70.370233 70.370233 0 0 0-70.155907-67.536372zM285.195907 114.592744c-21.861209 21.861209-20.646698 62.202047 6.834605 89.683349l29.291162 29.291163h165.697489l-112.116093-112.139907c-27.552744-27.52893-67.774512-28.767256-89.707163-6.834605z m414.767628 3.524465l-3.500651 3.333954-112.116093 112.092279h165.673674l29.291163-29.291163c27.481302-27.457488 28.695814-67.798326 6.834605-89.659535-21.027721-21.027721-58.820465-20.765767-86.206512 3.524465z"
+                        p-id="5743" data-v-3c4aa6b6=""></path>
+                </g>
+            </svg></div>
+    </div>
     <div class="copyright">
+
         <div class="common-box tryout-box">
             <div class="tryout">
                 <p>手机办公无时无刻，随时随地，自由自在</p>

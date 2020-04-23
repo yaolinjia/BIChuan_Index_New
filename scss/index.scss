@@ -1,6 +1,8 @@
 @charset "utf-8";
 @import "./commen.scss";
-
+.nav_box{
+    background-color: transparent;
+}
 .banner-box {
     width: 100%;
     background: url(../img/banner-bg2.png) 0 0 no-repeat;
